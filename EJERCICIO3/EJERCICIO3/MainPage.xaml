@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EJERCICIO3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DeepSkyBlue" Padding="0" CornerRadius="0">
+
+        </Frame>
+        <Label  Text="FAVOR LLENAR EL SIGUIENTE FORMULARIO" FontSize="15" FontAttributes="Bold" Padding="30,0,0,0" HorizontalTextAlignment="Center"  />
+
+        <Label FontSize="10" Padding="0,0,0,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Entry x:Name="txtid" 
+               Keyboard="Text" 
+               Placeholder="codigo" 
+               Text="{Binding Id}"
+               IsEnabled="False"
+               HorizontalTextAlignment="Center"/>
+
+        <Label  Padding="10,0,0,0"
+                Text="Ingrese Nombres" 
+                HorizontalTextAlignment="Start" 
+                TextColor="Black"   
+                FontSize="20"/>
+        <Entry x:Name="txtnombre" 
+               Keyboard="Text" 
+               Placeholder="Maria Rosa" 
+               Text="{Binding nombre}"
+               HorizontalTextAlignment="Center"/>
+        
+
+        <Label Padding="10,0,0,0"  
+               Text="Ingrese Apellidos" 
+               HorizontalTextAlignment="Start" 
+              TextColor="Black" 
+               FontSize="20"/>
+        <Entry x:Name="txtapellido" 
+               Keyboard="Text" 
+               Placeholder="Alvarado Funez" 
+                Text="{Binding apellidos}"
+               HorizontalTextAlignment="Center"  />
+        
+        
+
+        <Label Padding="10,0,0,0"  
+               Text="Ingrese Edad" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black" 
+               FontSize="20"/>
+        <Entry x:Name="txtedad" 
+               Keyboard="Numeric" 
+               Placeholder="30 a;os" 
+               Text="{Binding edad}"
+               HorizontalTextAlignment="Center"  />
+        
+
+        <Label Padding="10,0,0,0"  
+               Text="Ingrese E-mail" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black"   
+               FontSize="20"/>
+        <Entry x:Name="txtcorreo" 
+               Keyboard="Email" 
+               Placeholder="annyalvarado10@gmail.com" 
+               Text="{Binding correo}"
+               HorizontalTextAlignment="Center" />
+        
+
+        <Label Padding="10,0,0,0"  
+               Text="Ingrese Su Direccion"
+               HorizontalTextAlignment="Start" 
+               TextColor="Black"  
+               FontSize="20"/>
+        <Entry x:Name="txtdireccion" 
+               Keyboard="Text" 
+               Placeholder="Roatan, Islas de la bahia"
+                Text="{Binding direccion}"
+               HorizontalTextAlignment="Center" />
+
+    
+        
+        
+        <Button Text="Guardar y/o Modificar"
+        Font="Large"
+        BackgroundColor="PowderBlue"
+        TextColor="Black"
+        Margin="10,0"
+        Clicked="btnguardar_Clicked" />
+
+        <Button Text="ELIMINAR"
+        Font="Large"
+        BackgroundColor="PowderBlue"
+        TextColor="Black"
+        Margin="10,0"
+        Clicked="btneliminar"/>
+
+       
+
+
+    </StackLayout>
+
+</ContentPage>
